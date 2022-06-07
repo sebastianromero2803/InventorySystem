@@ -38,3 +38,57 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
 2022-06-06 23:49:19.553 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 92.3242ms
 2022-06-06 23:49:19.662 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
 2022-06-06 23:49:19.829 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.7576ms
+2022-06-07 12:07:45.134 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-07 12:07:45.189 -05:00 [INF] Hosting environment: Development
+2022-06-07 12:07:45.190 -05:00 [INF] Content root path: C:\Users\SEBASTIAN ROMERO\LeanTech\Backend Training\Projects\InventorySystem\InventorySystem.Services
+2022-06-07 12:07:45.196 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger - -
+2022-06-07 12:07:45.290 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger - - - 301 - - 94.6143ms
+2022-06-07 12:07:45.290 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2022-06-07 12:07:45.506 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 215.7298ms
+2022-06-07 12:07:45.526 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/swagger-ui.css - -
+2022-06-07 12:07:45.529 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/swagger-ui-standalone-preset.js - -
+2022-06-07 12:07:45.530 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2022-06-07 12:07:45.530 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/swagger-ui-bundle.js - -
+2022-06-07 12:07:45.544 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 14.0651ms
+2022-06-07 12:07:45.571 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-07 12:07:45.571 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-07 12:07:45.572 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-07 12:07:45.574 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/swagger-ui.css - - - 200 142933 text/css 48.4822ms
+2022-06-07 12:07:45.582 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 52.3209ms
+2022-06-07 12:07:45.598 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 67.8589ms
+2022-06-07 12:07:45.722 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2022-06-07 12:07:45.756 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6840ms
+2022-06-07 12:07:46.030 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2022-06-07 12:07:46.062 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/favicon-32x32.png - -
+2022-06-07 12:07:46.062 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-06-07 12:07:46.063 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/favicon-32x32.png - - - 200 628 image/png 1.0136ms
+2022-06-07 12:07:46.145 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.9123ms
+2022-06-07 12:07:58.891 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-07 12:07:58.907 -05:00 [INF] Hosting environment: Development
+2022-06-07 12:07:58.908 -05:00 [INF] Content root path: C:\Users\SEBASTIAN ROMERO\LeanTech\Backend Training\Projects\InventorySystem\InventorySystem.Services
+2022-06-07 12:07:58.910 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2022-06-07 12:07:59.113 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 205.4574ms
+2022-06-07 12:07:59.138 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2022-06-07 12:07:59.145 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 6.2709ms
+2022-06-07 12:07:59.192 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2022-06-07 12:07:59.233 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.7124ms
+2022-06-07 12:07:59.406 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2022-06-07 12:07:59.539 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.2825ms
+2022-06-07 12:08:12.639 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/api/Article/a - -
+2022-06-07 12:08:12.682 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+InventorySystem.Services.Controllers.ArticleController.GetStockBalanceById (InventorySystem.Services)
+InventorySystem.Services.Controllers.ArticleController.GetStockBalances (InventorySystem.Services)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-07 12:08:12.754 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/api/Article/a - - - 500 - text/plain 114.7818ms
