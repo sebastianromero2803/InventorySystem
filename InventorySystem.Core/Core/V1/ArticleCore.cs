@@ -55,7 +55,7 @@ namespace InventorySystem.Core.Core.V1
             }
         }
 
-        public async Task<ResponseService<Dictionary<int, int>>> GetArticlesBalanceAsync()
+        public async Task<ResponseService<string>> GetArticlesBalanceAsync()
         {
             try
             {
@@ -63,11 +63,11 @@ namespace InventorySystem.Core.Core.V1
                 var articlesId = articles.Select((art) => art.IdArticle).ToList();
                 var articlesStock = articles.Select((art) => art.Stock).ToList();
                 var dict = JsonConvert.SerializeObject( Enumerable.Range(0, articlesId.Count).ToDictionary(i => articlesId[i], i => articlesStock[i]) );
-                return new ResponseService<Dictionary<int, int>>(false, $"The balance of all the articles is: {dict}", HttpStatusCode.OK, dict);
+                return new ResponseService<string>(false, $"The balance of all the articles is: {dict}", HttpStatusCode.OK, dict);
             }
             catch (Exception ex)
             {
-                return _errorHandler.Error(ex, "GetArticlesAsync", new Dictionary<int, int>());
+                return _errorHandler.Error(ex, "GetArticlesAsync", "");
             }
         }
 
