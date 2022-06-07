@@ -110,3 +110,28 @@ InventorySystem.Services.Controllers.ArticleController.GetStockBalances (Invento
 2022-06-07 12:36:14.695 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ArticleController.GetStockBalances (InventorySystem.Services) in 2116.4532ms
 2022-06-07 12:36:14.697 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ArticleController.GetStockBalances (InventorySystem.Services)'
 2022-06-07 12:36:14.698 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/api/Article/stock - - - 200 - application/json;+charset=utf-8 2202.9429ms
+2022-06-07 13:26:59.320 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-07 13:26:59.334 -05:00 [INF] Hosting environment: Development
+2022-06-07 13:26:59.335 -05:00 [INF] Content root path: C:\Users\SEBASTIAN ROMERO\LeanTech\Backend Training\Projects\InventorySystem\InventorySystem.Services
+2022-06-07 13:26:59.337 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/index.html - -
+2022-06-07 13:26:59.521 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/index.html - - - 200 - text/html;charset=utf-8 186.2115ms
+2022-06-07 13:26:59.551 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - -
+2022-06-07 13:26:59.556 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 5.0972ms
+2022-06-07 13:26:59.648 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/_vs/browserLink - -
+2022-06-07 13:26:59.684 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.4993ms
+2022-06-07 13:26:59.830 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - -
+2022-06-07 13:26:59.923 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.0771ms
+2022-06-07 13:27:03.997 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/api/Article - -
+2022-06-07 13:27:04.026 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.ArticleController.Get (InventorySystem.Services)'
+2022-06-07 13:27:04.051 -05:00 [INF] Route matched with {action = "Get", controller = "Article"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[InventorySystem.Entities.Entities.Article]]] Get() on controller InventorySystem.Services.Controllers.ArticleController (InventorySystem.Services).
+2022-06-07 13:27:05.362 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[System.Collections.Generic.List`1[[InventorySystem.Entities.Entities.Article, InventorySystem.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-07 13:27:05.380 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ArticleController.Get (InventorySystem.Services) in 1325.9891ms
+2022-06-07 13:27:05.382 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ArticleController.Get (InventorySystem.Services)'
+2022-06-07 13:27:05.384 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/api/Article - - - 200 - application/json;+charset=utf-8 1387.3321ms
+2022-06-07 13:27:20.517 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44302/api/Article/stock/3 - -
+2022-06-07 13:27:20.518 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.ArticleController.GetStockBalanceById (InventorySystem.Services)'
+2022-06-07 13:27:20.531 -05:00 [INF] Route matched with {action = "GetStockBalanceById", controller = "Article"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Article]] GetStockBalanceById(Int32) on controller InventorySystem.Services.Controllers.ArticleController (InventorySystem.Services).
+2022-06-07 13:27:20.641 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-07 13:27:20.644 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ArticleController.GetStockBalanceById (InventorySystem.Services) in 113.4427ms
+2022-06-07 13:27:20.644 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ArticleController.GetStockBalanceById (InventorySystem.Services)'
+2022-06-07 13:27:20.645 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44302/api/Article/stock/3 - - - 200 - application/json;+charset=utf-8 127.9492ms

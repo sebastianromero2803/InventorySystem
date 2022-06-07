@@ -18,10 +18,6 @@ namespace InventorySystem.Repositories.ImplementRepositories
         {
             try
             {
-                Article article = await _context.Article.FindAsync(entity.IdArticle);
-                article.Stock += entity.Quantity * entity.MovementType;
-                _context.Article.Update(article);
-
                 var result = _context.Movement.Add(entity);
                 await _context.SaveChangesAsync();
 

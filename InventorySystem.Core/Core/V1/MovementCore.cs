@@ -14,15 +14,17 @@ namespace InventorySystem.Core.Core.V1
     public class MovementCore
     {
         private readonly IMovementRepository _context;
+        private readonly IArticleRepository _articleRepository;
         private readonly ILogger<Movement> _logger;
         private readonly ErrorHandler<Movement> _errorHandler;
         private readonly IMapper _mapper;
 
-        public MovementCore(ILogger<Movement> logger, IMapper mapper, IMovementRepository context)
+        public MovementCore(ILogger<Movement> logger, IMapper mapper, IMovementRepository context, IArticleRepository articleRepository)
         {
             _logger = logger;
             _errorHandler = new ErrorHandler<Movement>(logger);
             _context = context;
+            _articleRepository = articleRepository;
             _mapper = mapper;
         }
 
@@ -33,8 +35,13 @@ namespace InventorySystem.Core.Core.V1
 
             try
             {
-                var newMovementCreated = await _context.AddAsync(newMovement);
-                return new ResponseService<Movement>(false, "Succefully created Movement", HttpStatusCode.Created, newMovementCreated.Item1);
+                var updatedArticle = await _articleRepository.UpdateStockAsync(newMovement);
+                if (updatedArticle)
+                {
+                    var newMovementCreated = await _context.AddAsync(newMovement);
+                    return new ResponseService<Movement>(false, "Succefully created Movement", HttpStatusCode.Created, newMovementCreated.Item1);
+                }
+                return new ResponseService<Movement>(true, "Could not Update the Article nor Create the Movement", HttpStatusCode.FailedDependency, new Movement());
             }
             catch (Exception ex)
             {

@@ -85,5 +85,21 @@ namespace InventorySystem.Repositories.ImplementRepositories
                 throw;
             }
         }
+
+        public async Task<bool> UpdateStockAsync(Movement entity)
+        {
+            try
+            {
+                Article article = await _context.Article.FindAsync(entity.IdArticle);
+                article.Stock += entity.Quantity * entity.MovementType;
+                _context.Article.Update(article);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

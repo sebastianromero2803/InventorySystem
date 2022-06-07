@@ -15,9 +15,9 @@ namespace InventorySystem.Services.Controllers
     {
         private readonly MovementCore _movementCore;
 
-        public MovementController(ILogger<Movement> logger, IMapper mapper, IMovementRepository context)
+        public MovementController(ILogger<Movement> logger, IMapper mapper, IMovementRepository context, IArticleRepository contextArticle)
         {
-            _movementCore = new MovementCore(logger, mapper, context);
+            _movementCore = new MovementCore(logger, mapper, context, contextArticle);
         }
 
         [HttpPost]
