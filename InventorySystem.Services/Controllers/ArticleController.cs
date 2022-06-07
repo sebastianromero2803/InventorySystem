@@ -30,14 +30,14 @@ namespace InventorySystem.Services.Controllers
             return StatusCode((int)response.StatusHttp, response);
         }
 
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<int>>> GetStockBalances()
-        //{
-        //    var response = await _articleCore.GetArticlesBalanceAsync();
-        //    return StatusCode((int)response.StatusHttp, response);
-        //}
+        [HttpGet("stock")]
+        public async Task<ActionResult<string>> GetStockBalances()
+        {
+            var response = await _articleCore.GetArticlesBalanceAsync();
+            return StatusCode((int)response.StatusHttp, response);
+        }
 
-        [HttpGet("{id}")]
+        [HttpGet("stock/{id}")]
         public async Task<ActionResult<Article>> GetStockBalanceById(int id)
         {
             var response = await _articleCore.GetArticleBalanceAsync(id);
